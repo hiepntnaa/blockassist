@@ -1,0 +1,76 @@
+{
+  "artifacts": [],
+  "command": "main",
+  "experiment": {
+    "base_dir": "/root/blockassist/blockassist-venv/lib/python3.10/site-packages/mbag/scripts",
+    "dependencies": [
+      "mbag-gensyn==0.0.2",
+      "numpy==1.21.6",
+      "sacred==0.8.4",
+      "torch==2.8.0",
+      "tqdm==4.67.1"
+    ],
+    "mainfile": "evaluate.py",
+    "name": "evaluate",
+    "repositories": [
+      {
+        "commit": "d81ea6721b319be1d31c4d0d0526f9afff616c79",
+        "dirty": false,
+        "url": "https://github.com/gensyn-ai/blockassist"
+      }
+    ],
+    "sources": [
+      [
+        "evaluate.py",
+        "_sources/evaluate_fcf0643e8a604ea7f089cae4063c00e0.py"
+      ]
+    ]
+  },
+  "heartbeat": "2025-08-11T18:10:16.377249",
+  "host": {
+    "ENV": {},
+    "cpu": "Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz",
+    "hostname": "vps",
+    "os": [
+      "Linux",
+      "Linux-6.5.0-45-generic-x86_64-with-glibc2.35"
+    ],
+    "python_version": "3.10.18"
+  },
+  "meta": {
+    "command": "main",
+    "config_updates": {
+      "assistant_checkpoint": "data/base_checkpoint"
+    },
+    "named_configs": [
+      "human_with_assistant",
+      "blockassist"
+    ],
+    "options": {
+      "--beat-interval": null,
+      "--capture": null,
+      "--comment": null,
+      "--debug": false,
+      "--enforce_clean": false,
+      "--file_storage": null,
+      "--force": false,
+      "--help": false,
+      "--id": null,
+      "--loglevel": null,
+      "--mongo_db": null,
+      "--name": null,
+      "--pdb": false,
+      "--print-config": false,
+      "--priority": null,
+      "--queue": false,
+      "--s3": null,
+      "--sql": null,
+      "--tiny_db": null,
+      "--unobserved": false
+    }
+  },
+  "resources": [],
+  "result": null,
+  "start_time": "2025-08-11T18:09:36.354621",
+  "status": "RUNNING"
+}

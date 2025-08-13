@@ -1,0 +1,204 @@
+{
+  "__annotations__": {
+    "num_workers": {
+      "py/type": "builtins.int"
+    }
+  },
+  "agent_config_updates": [
+    {}
+  ],
+  "algorithm_config_updates": [
+    {},
+    {
+      "mcts_config": {
+        "num_simulations": 10
+      },
+      "num_gpus": 0,
+      "num_gpus_per_worker": 0,
+      "player_index": 1
+    }
+  ],
+  "assistant_checkpoint": "data/base_checkpoint",
+  "assistant_run": "MbagAlphaZero",
+  "checkpoint": "data/base_checkpoint",
+  "checkpoints": [
+    null,
+    "data/base_checkpoint"
+  ],
+  "confidence_thresholds": null,
+  "env_config": null,
+  "env_config_updates": {
+    "goal_generator_config": {
+      "goal_generator": "blockassist",
+      "goal_generator_config": {
+        "house_id": null,
+        "subset": "test"
+      }
+    },
+    "horizon": 10000,
+    "malmo": {
+      "action_delay": 0.8,
+      "rotate_spectator": false
+    },
+    "num_players": 2,
+    "players": [
+      {
+        "player_name": "human"
+      },
+      {
+        "player_name": "assistant"
+      }
+    ]
+  },
+  "expected_reward_shift": 0,
+  "experiment_name": "",
+  "experiment_tag": "",
+  "explore": [
+    false,
+    false
+  ],
+  "goal_set": "test",
+  "house_id": null,
+  "min_action_interval": 0.8,
+  "num_episodes": 1,
+  "num_simulations": 1,
+  "num_workers": 0,
+  "observer": {
+    "basedir": "data/base_checkpoint/evaluate_2025-08-11_18-12-58",
+    "config": {
+      "py/id": 0
+    },
+    "copy_artifacts": true,
+    "copy_sources": true,
+    "cout": "",
+    "cout_write_cursor": 0,
+    "dir": "data/base_checkpoint/evaluate_2025-08-11_18-12-58/4",
+    "info": {},
+    "priority": 20,
+    "py/object": "sacred.observers.file_storage.FileStorageObserver",
+    "resource_dir": {
+      "py/reduce": [
+        {
+          "py/type": "pathlib.PosixPath"
+        },
+        {
+          "py/tuple": [
+            "data",
+            "base_checkpoint",
+            "evaluate_2025-08-11_18-12-58",
+            "_resources"
+          ]
+        }
+      ]
+    },
+    "run_entry": {
+      "artifacts": [],
+      "command": "main",
+      "experiment": {
+        "base_dir": "/root/blockassist/blockassist-venv/lib/python3.10/site-packages/mbag/scripts",
+        "dependencies": [
+          "mbag-gensyn==0.0.2",
+          "numpy==1.21.6",
+          "sacred==0.8.4",
+          "torch==2.8.0",
+          "tqdm==4.67.1"
+        ],
+        "mainfile": "evaluate.py",
+        "name": "evaluate",
+        "repositories": [
+          {
+            "commit": "d81ea6721b319be1d31c4d0d0526f9afff616c79",
+            "dirty": false,
+            "url": "https://github.com/gensyn-ai/blockassist"
+          }
+        ],
+        "sources": [
+          [
+            "evaluate.py",
+            "_sources/evaluate_fcf0643e8a604ea7f089cae4063c00e0.py"
+          ]
+        ]
+      },
+      "heartbeat": null,
+      "host": {
+        "ENV": {},
+        "cpu": "Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz",
+        "hostname": "vps",
+        "os": [
+          "Linux",
+          "Linux-6.5.0-45-generic-x86_64-with-glibc2.35"
+        ],
+        "python_version": "3.10.18"
+      },
+      "meta": {
+        "command": "main",
+        "config_updates": {
+          "assistant_checkpoint": "data/base_checkpoint"
+        },
+        "named_configs": [
+          "human_with_assistant",
+          "blockassist"
+        ],
+        "options": {
+          "--beat-interval": null,
+          "--capture": null,
+          "--comment": null,
+          "--debug": false,
+          "--enforce_clean": false,
+          "--file_storage": null,
+          "--force": false,
+          "--help": false,
+          "--id": null,
+          "--loglevel": null,
+          "--mongo_db": null,
+          "--name": null,
+          "--pdb": false,
+          "--print-config": false,
+          "--priority": null,
+          "--queue": false,
+          "--s3": null,
+          "--sql": null,
+          "--tiny_db": null,
+          "--unobserved": false
+        }
+      },
+      "resources": [],
+      "start_time": "2025-08-11T18:12:58.355992",
+      "status": "RUNNING"
+    },
+    "source_dir": {
+      "py/reduce": [
+        {
+          "py/type": "pathlib.PosixPath"
+        },
+        {
+          "py/tuple": [
+            "data",
+            "base_checkpoint",
+            "evaluate_2025-08-11_18-12-58",
+            "_sources"
+          ]
+        }
+      ]
+    },
+    "template": null
+  },
+  "out_dir": "data/base_checkpoint/evaluate_2025-08-11_18-12-58",
+  "policy_ids": [
+    null,
+    "assistant"
+  ],
+  "record_video": false,
+  "runs": [
+    "HumanAgent",
+    "MbagAlphaZero"
+  ],
+  "save_episodes": true,
+  "seed": 0,
+  "temperatures": [
+    1.0,
+    1.0
+  ],
+  "time_str": "2025-08-11_18-12-58",
+  "use_malmo": true
+}
