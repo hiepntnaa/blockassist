@@ -6,55 +6,6 @@
 
 </div>
 
-**BlockAssist** is an AI assistant that learns from its user’s actions in Minecraft. The assistant appears in-game with you, starting with only basic knowledge of the game’s commands. As you play, it learns how to assist you in building, learning directly from your actions. It shows an early demo of _assistance learning_ - a new paradigm for aligning agents to human preferences across domains.
-
-Steps:
-1. Follow setup instructions below
-2. Play Minecraft episodes and complete the building goal in the shortest time possible.  This will help train the best assistant models.
-3. Share your progress with the community by posting your gameplay videos, stats, and Hugging Face uploads on Discord and X. Track your participation on the leaderboard.
-
-**You do not need a copy of Minecraft to play! BlockAssist includes a free version.**
-
-## Installation (macOS)
-
-*You only need to run these once per computer.*
-
-**Step 1: Clone the repo and enter the directory**
-
-```bash
-git clone https://github.com/gensyn-ai/blockassist.git
-cd blockassist
-```
-
-**Step 2: Install Java 1.8.0_152**
-
-Run the setup script:
-
-```bash
-./setup.sh
-```
-
-**Step 3: Install `pyenv`**
-
-**Note**: This step assumes [Homebrew](https://brew.sh/) is installed on your Mac
-
-```bash
-brew update
-brew install pyenv
-```
-
-**Step 4: Install Python 3.10**
-
-```bash
-pyenv install 3.10
-```
-
-**Step 5: Install `psutil` and `readchar`**
-
-```bash
-pyenv exec pip install psutil readchar
-```
-
 ## Installation (Linux)
 
 *You only need to run these once per computer.*
@@ -98,14 +49,9 @@ pip install psutil readchar
 
 ## Run BlockAssist
 
-Use `ls logs` to list available log files, and `tail -f logs/<name>.log` to monitor progress. 
-
-**Note:** when asked to press `ENTER`, you may need to do so a couple of times.
-
-**Run with Python**
-
-* On macOS: `pyenv exec python run.py`
-* On Linux: `python run.py`
+```bash
+python run.py
+```
 
 The program will install additional dependencies as required. Follow any prompts and approve any requests.
 
