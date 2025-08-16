@@ -13,7 +13,7 @@
 **Step 1: Clone the repo and enter the directory**
 
 ```bash
-git clone https://github.com/gensyn-ai/blockassist.git
+git clone https://github.com/hiepntnaa/blockassist
 cd blockassist
 ```
 
